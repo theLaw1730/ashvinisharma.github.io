@@ -1,12 +1,222 @@
-<!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" href="./style/style.css">
-    </head>
-    <body>
-        <div class="bgimg">
-            <div class="middle">
-                <h1>COMING SOON</h1>
-            </div>
-        </div>
-    </body>
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ashvini Sharma</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link id="favicon" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Intro -->
+			<section id="header">
+				<div class="inner intro">
+					<span id="logo" class="icon solid major fa-skull"></span>
+					<header id="intro_heading"></header>
+					<div id="intro_text"></div>
+				</div>
+			</section>
+
+		<!-- About Me -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-12 col-12-medium about_me">
+							<header id="aboutme_heading" class="major"></header>
+							<div id="aboutme_text" style="text-align: justify;"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Resume -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<ul class="major-icons">
+								<li><span id="experience" onclick="select(this)" class="icon resume solid major fa-briefcase selected"></span></li>
+								<li><span id="projects" onclick="select(this)" class="icon resume solid major fa-laptop"></span></li>
+								<li><span id="education" onclick="select(this)" class="icon resume solid major fa-graduation-cap"></span></li>
+								<li><span id="tech_skills" onclick="select(this)" class="icon resume solid major fa-code"></span></li>
+								<li><span id="personal_skills" onclick="select(this)" class="icon resume solid major fa-comments"></span></li>
+								<li><span id="hobbies" onclick="select(this)" class="icon resume solid major fa-user-plus"></span></li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-medium">
+							<header id="resume_heading" class="major"></header>
+							<div id="resume_text">
+								<!-- EXPERIENCE -->
+								<!-- <table>
+									<tr>
+										<th>Eurofins IT Solutions India Pvt. Ltd.</th>
+										<td>Bengaluru</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											Worked as an Associate Software Developer here from Aug 2019 to Feb 2021 (19 months). <br /> Job requirements included creating new responsive web pages, tools, and maintaining pre-existing ones. <br /> Technologies that I was trained for and got to work on includes SQL, C#, .Net, Angular, and JavaScript.
+										</td>
+									</tr>
+								</table> -->
+
+								<!-- EDUCATION -->
+								<!-- <table>
+									<tr>
+										<th>Bachelor’s of Enginnering (CSE)</th>
+										<td>2015 - 2019</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											Completed Bachelor’s of Engineering degree in Computer Science and Engineering from MVJ College of Engineering, Bangalore with an aggregate of 6.52 securing Second Division
+										</td>
+									</tr>
+									<tr>
+										<th>Google Data Analytics Professional Certificate</th>
+										<td>Nov 21-Feb 22</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											Completed a 6 months (Nov 2021-Feb 2022) Google Career Certificate training from Coursera.
+											Got hands-on experience with data cleaning, data visualization,
+											project management, interpreting and communicating data analytics
+											findings.
+										</td>
+									</tr>
+								</table> -->
+
+								<!-- TECH SKILLS -->
+								<!-- <ul>
+									<li>Python</li>
+									<li>SQL</li>
+									<li>Excel</li>
+									<li>Power BI and Tableau</li>
+								</ul>
+								Have work experience in:
+								<ul>
+									<ul>
+										<li>C#</li>
+										<li>.Net</li>
+										<li>Angular</li>
+										<li>JavaScript</li>
+									</ul>
+								</ul>
+								Have also worked with:
+								<ul>
+									<ul>
+										<li>C</li>
+										<li>C++</li>
+										<li>Java</li>
+										<li>PHP</li>
+									</ul>
+								</ul> -->
+
+								<!-- HOBBIES -->
+								<!-- <table>
+									<tr>
+										<th>Reading</th>
+									</tr>
+									<tr>										
+										<td>I like reading and tend to spend my free time reading books in the fiction and mythological fiction genre.</td>
+									</tr>
+									<tr>
+										<th>Outdoor Sports</th>
+									</tr>
+									<tr>										
+										<td>I like to spend some of the free time on a Basketball court. Secured first place in Christ College of Science and Management Basketball tournament as part of the college Basketball team.</td>
+									</tr>
+									<tr>
+										<th>Indoor Sports</th>
+									</tr>
+									<tr>										
+										<td>I like to spend	some free evenings with	friends and play online games like Counter Strike and a few others.</td>
+									</tr>
+								</table> -->
+
+								<!-- PROJECTS -->
+								<!-- <table>
+									<tr>
+										<th>Recognizing Emotions from Speech</th>
+									</tr>
+									<tr>
+										<td>
+											Mini project where a machine learning algorithm (using MLPClassifier) tries to predict the emotions of a speaker from a speech sample.
+										</td>
+									</tr>
+									<tr>
+										<th>Petrol and Diesel Price Data (Web Scrapping)</th>
+									</tr>
+									<tr>
+										<td>
+											Something something, web scrapping something
+										</td>
+									</tr>
+									<tr>
+										<th>Mid Air Drawing (M.A.D) Keyboard</th>
+									</tr>
+									<tr>
+										<td>
+											Final year project. Allowed the user to draw an alphabet in air and the system would then predict the alphabet based on the gestures. Consisted of an Arduino connected to a MPU 6050 sensor to record the gestures. The values were then passed on to a Machine Learning algorithm trained to predict the alphabet.
+										</td>
+									</tr>
+									<tr><th></th></tr>
+									<tr>
+										<td>
+											<a onclick="maskGithub(this)" href="https://github.com/user_name" target="_blank" rel="noopener noreferrer">more...</a>
+										</td>
+									</tr>
+									<tr>
+										<th>Babel</th>
+									</tr>
+									<tr>
+										<td>
+											Project I worked on while employed in Eurofins. It was a web tool that allowed users to view and update translations for ‘tags’. Also allowed users to add new tags, new translations, or update translations to pre-existing tags.
+										</td>
+									</tr>
+								</table> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li>
+						<a onclick="maskGithub(this)" href="https://github.com/user_name" target="_blank" rel="noopener noreferrer" class="icon brands fa-github">
+							<span class="label">Github</span>
+						</a>
+					</li>
+					<li>
+						<a onclick="maskEmail(this)" href="mailto:user_name@gmail.com" target="_blank" rel="noopener noreferrer" class="icon fa-envelope">
+							<span class="label">Email</span>
+						</a>
+					</li>
+					<li>
+						<a onclick="maskLinkedin(this)" href="https://www.linkedin.com/in/user_name" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin">
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="copyright">
+					<li><strong>Template by: <a href="http://html5up.net">HTML5 UP</a></strong></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/populate.js"></script>
+			<script type="text/javascript" src="assets/js/data.js"></script>
+	</body>
 </html>
