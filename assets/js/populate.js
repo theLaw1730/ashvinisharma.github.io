@@ -66,9 +66,11 @@ var populate_intro_aboutme = function() {
             $('#intro_text').append(intro.text)
 
     //populate about me
-            about_me = fetch_data("about_me")
-            $('#aboutme_heading').append(about_me.heading)
-            $('#aboutme_text').append(about_me.text)
+            // about_me = fetch_data("about_me")
+            // $('#aboutme_heading').append(about_me.heading)
+            // $('#aboutme_text').append(about_me.text)
+            $('.about_me').load('./assets/templates/about_me.html')
+
 }
 
 var populate_resume = function(id) {
