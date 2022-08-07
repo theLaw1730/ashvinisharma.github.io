@@ -61,22 +61,24 @@ var select = function(el) {
 var populate_intro_aboutme = function() {
 
     //populate intro
-            intro = fetch_data("intro")
-            $('#intro_heading').append(intro.heading)
-            $('#intro_text').append(intro.text)
+            // intro = fetch_data("intro")
+            // $('#intro_heading').append(intro.heading)
+            // $('#intro_text').append(intro.text)
+            $('#intro').load('./assets/templates/intro.html')
 
     //populate about me
             // about_me = fetch_data("about_me")
             // $('#aboutme_heading').append(about_me.heading)
             // $('#aboutme_text').append(about_me.text)
-            $('.about_me').load('./assets/templates/about_me.html')
+            $('#about_me').load('./assets/templates/about_me.html')
 
 }
 
-var populate_resume = function(id) {
-    obj = fetch_data(id)
-    $('#resume_heading').replaceWith("<header id='resume_heading' class='major'><h2>"+ obj.heading + "</h2></header>")
-    $('#resume_text').replaceWith("<div id='resume_text'>"+ obj.text + "</div>")
+var populate_resume = function(selection) {
+    // obj = fetch_data(id)
+    // $('#resume_heading').replaceWith("<header id='resume_heading' class='major'><h2>"+ obj.heading + "</h2></header>")
+    // $('#resume_text').replaceWith("<div id='resume_text'>"+ obj.text + "</div>")
+    $('#resume_text').load('./assets/templates/' + selection + '.html')
 }
 //----------------------------------------------------------- FUNCTION DEFINITIONS END -----------------------------------------------------------
 
